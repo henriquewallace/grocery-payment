@@ -1,0 +1,140 @@
+2024-04-19 22:26:04.978 Verbose logging enabled
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-04-19 22:26:05.402 Verbose logging enabled
+ /$$      /$$ /$$                     /$$      /$$                     /$$      
+| $$  /$ | $$|__/                    | $$$    /$$$                    | $$      
+| $$ /$$$| $$ /$$  /$$$$$$   /$$$$$$ | $$$$  /$$$$  /$$$$$$   /$$$$$$$| $$   /$$
+| $$/$$ $$ $$| $$ /$$__  $$ /$$__  $$| $$ $$/$$ $$ /$$__  $$ /$$_____/| $$  /$$/
+| $$$$_  $$$$| $$| $$  \__/| $$$$$$$$| $$  $$$| $$| $$  \ $$| $$      | $$$$$$/ 
+| $$$/ \  $$$| $$| $$      | $$_____/| $$\  $ | $$| $$  | $$| $$      | $$_  $$ 
+| $$/   \  $$| $$| $$      |  $$$$$$$| $$ \/  | $$|  $$$$$$/|  $$$$$$$| $$ \  $$
+|__/     \__/|__/|__/       \_______/|__/     |__/ \______/  \_______/|__/  \__/
+
+port:                         8081
+enable-browser-proxying:      false
+no-request-journal:           false
+verbose:                      true
+
+2024-04-19 22:27:01.772 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/products/PWWe3w1SDU                                       | /products**                                         <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2024-04-19 22:27:01.774 Request received:
+0:0:0:0:0:0:0:1 - GET /products**
+
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+Connection: [keep-alive]
+User-Agent: [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36]
+Sec-Fetch-Site: [none]
+Sec-Fetch-Dest: [document]
+Host: [localhost:8081]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Sec-Fetch-Mode: [navigate]
+sec-ch-ua: ["Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"]
+sec-ch-ua-mobile: [?0]
+Upgrade-Insecure-Requests: [1]
+sec-ch-ua-platform: ["macOS"]
+Sec-Fetch-User: [?1]
+Accept-Language: [en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2024-04-19 22:27:01.780 Received request to /not-matched with body 
+2024-04-19 22:27:01.847 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/products/PWWe3w1SDU                                       | /favicon.ico                                        <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2024-04-19 22:27:01.848 Request received:
+0:0:0:0:0:0:0:1 - GET /favicon.ico
+
+Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+Connection: [keep-alive]
+User-Agent: [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36]
+Referer: [http://localhost:8081/products**]
+Sec-Fetch-Site: [same-origin]
+Sec-Fetch-Dest: [image]
+Host: [localhost:8081]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Sec-Fetch-Mode: [no-cors]
+sec-ch-ua: ["Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"]
+sec-ch-ua-mobile: [?0]
+sec-ch-ua-platform: ["macOS"]
+Accept-Language: [en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2024-04-19 22:27:01.849 Received request to /not-matched with body 
+2024-04-19 22:27:10.915 Request received:
+0:0:0:0:0:0:0:1 - GET /products
+
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+Connection: [keep-alive]
+User-Agent: [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36]
+Sec-Fetch-Site: [none]
+Sec-Fetch-Dest: [document]
+Host: [localhost:8081]
+Accept-Encoding: [gzip, deflate, br, zstd]
+Sec-Fetch-Mode: [navigate]
+sec-ch-ua: ["Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"]
+sec-ch-ua-mobile: [?0]
+Upgrade-Insecure-Requests: [1]
+sec-ch-ua-platform: ["macOS"]
+Sec-Fetch-User: [?1]
+Accept-Language: [en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "[{\"id\":\"Dwt5F7KAhi\",\"name\":\"Amazing Pizza!\",\"price\":1099},{\"id\":\"PWWe3w1SDU\",\"name\":\"Amazing Burger!\",\"price\":999},{\"id\":\"C8GDyLrHJb\",\"name\":\"Amazing Salad!\",\"price\":499},{\"id\":\"4MB7UfpTQs\",\"name\":\"Boring Fries!\",\"price\":199}]",
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+
+[{"id":"Dwt5F7KAhi","name":"Amazing Pizza!","price":1099},{"id":"PWWe3w1SDU","name":"Amazing Burger!","price":999},{"id":"C8GDyLrHJb","name":"Amazing Salad!","price":499},{"id":"4MB7UfpTQs","name":"Boring Fries!","price":199}]
+
+2024-04-19 22:55:52.797 Received request to /shutdown with body 
